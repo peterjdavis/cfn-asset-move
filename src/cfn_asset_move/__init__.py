@@ -36,6 +36,13 @@ parser.add_argument(
 cli_options = parser.parse_args()
 
 def process_template():
+
+    cfn_input_template = str(cli_options.cfn_input_template)
+    cfn_output_template = str(cli_options.cfn_output_template)
+    target_asset_folder = str(cli_options.target_asset_folder)
+    target_bucket = str(cli_options.target_bucket)
+    target_key = str(cli_options.target_key)
+
     with open(cfn_input_template) as f:
         cfn = json.load(f)
         resources = cfn["Resources"]
