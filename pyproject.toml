@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cfn-asset-move"
+authors = [
+    {name = "Pete Davis", email = "pete@peterjdavis.info"},
+]
+description = "Move CFN assets"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["CFN", "SAM"]
+license = {text = "MIT License"}
+dependencies = [
+    "boto3",
+]
+dynamic = ["version"]
