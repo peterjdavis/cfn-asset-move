@@ -16,3 +16,6 @@ license = {text = "MIT License"}
 dependencies = [
     "boto3",
 ]
+
+[project.scripts]
+cfn-asset-move = "cfn-asset-move:process_template"
