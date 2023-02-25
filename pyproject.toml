@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cfn-asset-move"
+name = "cfn_asset_move"
 version = "0.0.1"
 authors = [
     {name = "Pete Davis", email = "pete@peterjdavis.info"},
@@ -18,4 +18,4 @@ dependencies = [
 ]
 
 [project.scripts]
-cfn-asset-move = "cfn-asset-move:process_template"
+cfn-asset-move = "cfn_asset_move:process_template"
