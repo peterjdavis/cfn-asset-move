@@ -4,7 +4,7 @@ import argparse
 from pathlib import Path
 
 
-def process_template()
+def process_template():
     s3_client = boto3.client('s3')
 
     parser = argparse.ArgumentParser(description=__doc__)
